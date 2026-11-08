@@ -1,0 +1,17 @@
+[Unit]
+Description=Telegram bot Zakaz (Asoznanie)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/Zakaz
+ExecStart=/root/Zakaz/.venv/bin/python main.py
+EnvironmentFile=/root/Zakaz/.env
+Environment=PYTHONUNBUFFERED=1
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

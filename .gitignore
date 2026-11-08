@@ -1,0 +1,14 @@
+# Секреты
+.env
+
+# База с персональными данными клиентов
+bot.db
+backups/
+backups.log
+
+# Служебное
+.venv/
+__pycache__/
+*.pyc
+nohup.out
+start.bat
