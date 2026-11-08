@@ -123,7 +123,7 @@ async def liter_project(message: Message):
 @router.message(F.text == 'Обратиться в поддержку')
 async def help(message: Message):
     await message.answer(
-        'Узнать подробнее или задать вопрос можно здесь: https://t.me/asoznaniework'
+        'Узнать подробнее или задать вопрос можно здесь: https://t.me/asoznaniee'
     )
 
 async def _edit_caption(message: Message, text: str, markup) -> None:
